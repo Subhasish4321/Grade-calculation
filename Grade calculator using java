@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(n<7)
+        {
+        int arr[]=new int[n];
+            String g="";
+        int pmr=0;
+     int pm=0;
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+             pmr+=arr[i];
+        }
+         pm=pmr/n;
+        if(pm>= 90 ) 
+         g="A+";
+        if(pm>=70 && pm<=89)
+            g="A";
+         if(pm>=60 && pm<=69)
+            g="B";
+         if(pm>=50 && pm<=59)
+            g="C";
+         if(pm<=40)
+            g="D";
+        System.out.println(g);
+        }
+        
+    }
+}
